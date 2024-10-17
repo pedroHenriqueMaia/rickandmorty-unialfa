@@ -29,5 +29,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Create docs folder
 
 ```
-  ng build --output-path docs --base-href /rick-and-morty-angular
+  ng build --output-path docs --base-href /rick-and-morty-angular/
 ```
