@@ -1,0 +1,19 @@
+<div class="card character-card" [appHighlight]="character.status">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img [src]="character.image" class="card-img rounded-left" alt="{{ character.name }}">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{ character.name }}</h5>
+        <p class="card-text"><strong>Species:</strong> {{ character.species }}</p>
+        <p class="card-text"><strong>Status:</strong> {{ character.status }}</p>
+        <p class="card-text"><strong>Gender:</strong> {{ character.gender }}</p>
+        <p class="card-text"><strong>Origin:</strong> {{ character.origin.name }}</p>
+        <p class="card-text"><strong>Location:</strong> {{ character.location.name }}</p>
+        <p class="card-text"><strong>Episodes Count:</strong> {{ character.episode.length  }}</p>
+        <a [routerLink]="['/character', character.id]" class="btn btn-primary">View Details</a>
+      </div>
+    </div>
+  </div>
+</div>
