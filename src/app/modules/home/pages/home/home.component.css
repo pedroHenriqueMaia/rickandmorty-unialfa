@@ -18,3 +18,19 @@ input {
   transform: scale(1.02);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
+/* src/app/pages/home/home.component.css */
+
+.loading-indicator {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.finished-indicator {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 20px 0;
+  color: gray;
+}
+

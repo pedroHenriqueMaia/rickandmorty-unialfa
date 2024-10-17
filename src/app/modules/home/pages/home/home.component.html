@@ -31,4 +31,8 @@
       <app-home-card [character]="character"></app-home-card>
     </div>
   </div>
+
+  <!-- Indicador de carregamento -->
+  <div *ngIf="loading" class="loading-indicator">Loading...</div>
+  <div *ngIf="finished" class="finished-indicator">No more characters to load.</div>
 </div>

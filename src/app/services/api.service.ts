@@ -11,8 +11,8 @@ export class ApiService {
 
   constructor(private http: HttpClient) {}
 
-  getAllCharacters(): Observable<any> {
-    return this.http.get(`${this.apiUrl}/character`);
+  getAllCharacters(page: number = 1): Observable<any> {
+    return this.http.get(`${this.apiUrl}/character?page=${page}`);
   }
 
   getCharacterById(id: number): Observable<Character> {
@@ -22,7 +22,7 @@ export class ApiService {
   searchCharacters(name?: string, planet?: string): Observable<any> {
     let query = `${this.apiUrl}/character?`;
     if (name) query += `name=${name}&`;
-    if (planet) query += `origin=${planet}`;
+    if (planet) query += `planet=${planet}`;
     return this.http.get(query);
   }
 }
